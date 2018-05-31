@@ -25,7 +25,6 @@ module.exports = {
     rules: [
       {
         test: /\.css$/, use: ['style-loader', 'css-loader'],
-        //Follow instructions at https://github.com/roylee0704/react-flexbox-grid
       },
       {
         test: /\.scss$/,
@@ -41,12 +40,10 @@ module.exports = {
         loaders: ["babel-loader"]
       }]
   },
-  devtool: "inline-source-map",
+  devtool: "cheap-inline-module-source-map",
   devServer: {
     historyApiFallback: true,
-    contentBase: './dist',
     hot: true
-
   },
 
 }
